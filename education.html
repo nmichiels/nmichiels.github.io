@@ -1,0 +1,926 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name" />
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="origo.css" title="Origo" media="all" />
+	<title>Nick Michiels</title>
+	
+
+	<!--
+	1 ) Reference to the files containing the JavaScript and CSS.
+	These files must be located on your server.
+-->
+
+<script type="text/javascript" src="highslide/highslide-with-html.js"></script>
+<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+<!--<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="../highslide/highslide-ie6.css" />
+<![endif]-->
+
+
+
+<!--
+    2) Optionally override the settings defined at the top
+    of the highslide.js file. The parameter hs.graphicsDir is important!
+-->
+
+<script type="text/javascript">
+//<![CDATA[
+hs.registerOverlay({
+	html: '<div class="closebutton" onclick="return hs.close(this)" title="Close"></div>',
+	position: 'top right',
+	fade: 2 // fading the semi-transparent overlay looks bad in IE
+});
+
+
+hs.graphicsDir = 'highslide/graphics/';
+hs.wrapperClassName = 'borderless';
+//]]>
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function toggle_v(e, name, button)
+{
+	e.preventDefault();
+	 $(name).slideToggle( 'fast', 'swing');
+	 if ($(button).text() == 'close') {
+		$(button).text('click here for more info/results');
+		}
+		else {
+		$(button).text('close');
+		}
+	 
+	 
+	
+}
+$(document).ready(function(e){
+ 
+
+  
+ 
+})
+
+</script>
+
+
+</head>
+
+<body class="light green smaller freestyle01" onLoad="resettoggle()">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58712747-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div id="layout">
+ 
+	<div class="row smaller">
+		<div class="col c5 smaller">
+			<h1><a href="index.html">Nick Michiels</a></h1>
+		</div>
+		
+		<div class="col c7 aligncenter">
+			<p class="slogan">Researcher - Expertise Centre for Digital Media - Hasselt University</p>
+		</div>
+	</div>
+  
+	<div class="row">
+		<div class="col c12 aligncenter">
+			<img src="images/front.jpg" width="960" height="240" alt="" />
+		</div>
+	</div>
+ 
+	<div class="row" id="slide">
+		<div class="col c2 alignleft">
+			<ul class="menu">
+				<li><a href="index.html">About me</a></li>
+				<li><a href="publications.html">Publications</a></li>
+				<li><a href="teaching.html">Teaching</a></li>
+				<li><a href="research.html">Research Projects</a>
+				<li><a href="education.html">Educational Projects</a>
+					<!--
+					<ul class="subpages">
+						<li><a href="index.html">3 columns</a></li>
+						<li><a class="current" href="2-col-a.html">2 columns A</a></li>
+						<li><a href="2-col-b.html">2 columns B</a></li>
+					</ul>
+					-->
+				</li>
+				<!--<li><a href="#">Links</a></li>-->
+			</ul>
+		</div>
+ 
+		<div class="col c10">
+
+		
+			
+			
+			<h2>Educational Projects</h2>
+			<br/>
+			<h2>2nd Master (2010-2011)</h2>
+			
+			<table width="100%">
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_entrepeneurship2011.png" width="128" alt="" onclick="toggle_v(event, '#entrepeneurship2011', '#entrepeneurship2011_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Businessplan – Youmotica</b><br/>
+					<i>Nick Michiels, Jens Bruggemans, Jimmy Cleuren and Wim Leers</i><br/>
+					Course: Entrepeneurship<br />
+					<br />
+
+					<div>
+					<br /><!-- put pdf, bib and doi -->
+					</div>
+					
+					<div class="clickDropDown">[<a id="entrepeneurship2011_Button" href="" title="Click This Button" onclick="toggle_v(event, '#entrepeneurship2011', '#entrepeneurship2011_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="entrepeneurship2011" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Businessplan created for a fictional company Youmotica. Youmotia is a company specialized in graphical user interfaces used for domotica installations.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_internship2011.png" width="128" alt="" onclick="toggle_v(event, '#internship2011', '#internship2011_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Internship at the Nuclear Research Centre SCK-CEN (Mol, Belgium) – MCNP/X Visualizer</b><br/>
+					<i>Nick Michiels</i><br/>
+					Course: Internship<br />
+					Language: Python, C++, POV-Ray
+					<br />
+
+					<div>
+					[<a href="education/manualMCNPXVisualizer_SCKCEN_NickMichiels.pdf" onClick="" title="Manual MCNP/X Visualizer" target="_blank">manual</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="internship2011_Button" href="" title="Click This Button" onclick="toggle_v(event, '#internship2011', '#internship2011_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="internship2011" class="dropdown publiProj" >
+						<h3>Description</h3>
+						The MCNPX Visualizer is a graphical user interface for rendering the geometry of a MCNPX file. It parses the geometry out of the file and renders it with the POV-Ray raytracer.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_FPGA2011.png" width="128" alt="" onclick="toggle_v(event, '#FPGA2011', '#FPGA2011_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>ArtGenerator (AGe) on an Altera DE-270 FPGA</b><br/>
+					<i>Nick Michiels, Jimmy Cleuren and Robin Marx</i><br/>
+					Course: Design and Realization of High Performance Multimedia and HCI systems<br />
+					Language: Verilog on DE-270 FPGA and Quartus
+					<br />
+
+					<div>
+					[<a href="education/FPGA2011_report.pdf" onClick="" title="report" target="_blank">report (dutch)</a>]
+					[<a href="https://www.youtube.com/embed/HaE_r35HLKo?rel=0&amp;wmode=transparent" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 800, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" class="highslide" title="pdf">mov</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="FPGA2011_Button" href="" title="Click This Button" onclick="toggle_v(event, '#FPGA2011', '#FPGA2011_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="FPGA2011" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Three art generators designed as a particle system on a DE-270 FPGA.
+						<br /><br />
+						<iframe width="580" height="435" src="https://www.youtube.com/embed/HaE_r35HLKo" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_MultimediaDesign2011.png" width="128" alt="" onclick="toggle_v(event, '#MultimediaDesign2011', '#MultimediaDesign2011_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Jimmy The Viking</b><br/>
+					<i>Nick Michiels, Jimmy Cleuren, Steven Reekmans, Jens Bruggemans and Wouter Nivelle</i><br/>
+					Course: Multimedia Design<br />
+					Language: Unity 3D with C# scripting
+					<br />
+
+					<div>
+					<!--[<a href="http://didactiek.edm.uhasselt.be/mmd/gallery/Unity/EindOpdracht/JimmieDeViking/viking.html" onClick="" title="report">play Jimmy the Viking</a>]-->
+					[<a href="education/Viking.exe.zip" onClick="" title="report" target="_blank">download (Windows)</a>]
+					[<a href="education/Viking.app.zip" onClick="" title="report">download (Mac)</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="MultimediaDesign2011_Button" href="" title="Click This Button" onclick="toggle_v(event, '#MultimediaDesign2011', '#MultimediaDesign2011_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="MultimediaDesign2011" class="dropdown publiProj" >
+						<h3>Description</h3>
+						A game concept, designed for the course Multimedia Design. It’s a viking game where Jimmy The Vikings needs to travel around the world to gain experience and skills to regain it’s rightful place on the throne of his tribe. His sidekick, Harhar The Viking is his father who helps Jimmy full-fulling his quests around the world.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_CA2011.png" width="128" alt="" onclick="toggle_v(event, '#CA2011', '#CA2011_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Tennis Game</b><br/>
+					<i>Nick Michiels</i><br/>
+					Course: Computer Animation<br />
+					Language: C++, OpenGL
+					<br />
+
+					<div>
+					[<a href="education/voorbeeldFilmpjeProjectCA.mp4" onClick="" title="report">movie</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="CA2011_Button" href="" title="Click This Button" onclick="toggle_v(event, '#CA2011', '#CA2011_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="CA2011" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Animating a tennisgame. It uses Inverse Kinematics for the racket, Free Form Deformation for the ball, paramatric and physical trajectory of the ball and collision detection for the net/ground. It’s possible to play with one or two players. The players can play automatically or manually.
+					</div>
+				</td>
+			</tr>
+			
+			</table>
+			
+			
+			
+			<br />
+			<h2>1st Master (2009-2010)</h2>
+			
+			<table width="100%">
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_MPC2010.png" width="128" alt="" onclick="toggle_v(event, '#MPC2010', '#MPC2010_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>SENSAR: Sensible Electronical Suited Awesome Realism</b><br/>
+					<i>Nick Michiels and Wouter Nivelle</i><br/>
+					Course: Mobile & Pervasive Computing<br />
+					Language: Processing, Unity3D, C and C++
+					<br />
+
+					<div>
+					[<a href="education/MPC_verslag.pdf" onClick="" title="pdf" target="_blank">pdf (dutch)</a>]
+					[<a href="education/PresentatieMPC.pdf" onClick="" title="pdf" target="_blank">presentation</a>]
+					[<a href="https://www.youtube.com/embed/fIZCR8rGHFs?rel=0&amp;wmode=transparent" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 800, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" class="highslide" title="pdf">mov</a>]
+					
+					
+					</div>
+					<div class="clickDropDown">[<a id="CMPC2010_Button" href="" title="Click This Button" onclick="toggle_v(event, '#MPC2010', '#MPC2010_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="MPC2010" class="dropdown publiProj" >
+						<h3>Description</h3>
+						A fun sensor-based project for walking in a virtual world. Without the use of a mouse or keyboard you can do a couple of physical actions: walking, looking up/down, looking left/right, turning around, crouching and shooting/pointing.
+						<br /><br />
+						<iframe width="580" height="435" src="https://www.youtube.com/embed/fIZCR8rGHFs" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_audio2010.png" width="128" alt="" onclick="toggle_v(event, '#audio2010', '#audio2010_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Spatialization and Speech synthesis in Pure Data</b><br/>
+					<i>Nick Michiels and Robin Marx</i><br/>
+					Course: Audio Processing<br />
+					Language: Pure Data Extended
+					<br />
+
+					<div>
+					<br />
+					</div>
+					<div class="clickDropDown">[<a id="audio2010_Button" href="" title="Click This Button" onclick="toggle_v(event, '#audio2010', '#audio2010_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="audio2010" class="dropdown publiProj" >
+						<h3>Description</h3>
+						A Pure data project wich can synthesize speech based on the phonemes. De sound is spatialized based on an opensource Java Jarky game.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_NVE2010.png" width="128" alt="" onclick="toggle_v(event, '#NVE2010', '#NVE2010_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Networked Virtual Environment</b><br/>
+					<i>Nick Michiels, Jimmy Cleuren and Robin Marx</i><br/>
+					Course: Networked Virtual Environments<br />
+					Language: C++ and Irrlicht Engine
+					<br />
+					
+					<div>
+					[<a href="education/NVE_verslag4_FINAL.pdf" onClick="" title="pdf" target="_blank">pdf (dutch)</a>]
+					[<a href="https://www.youtube.com/embed/ozqYx9kiXss?rel=0&amp;wmode=transparent" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 800, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" class="highslide" title="pdf">mov</a>]
+					
+					
+					</div>
+					<div class="clickDropDown">[<a id="NVE2010_Button" href="" title="Click This Button" onclick="toggle_v(event, '#NVE2010', '#NVE2010_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="NVE2010" class="dropdown publiProj" >
+						<h3>Description</h3>
+						The core for a virtual environment. Designed with the following features: <br /> 
+						&nbsp;&nbsp;&nbsp;-CS or P2P approach<br /> 
+						&nbsp;&nbsp;&nbsp;-FPS for fast interactions and RTS for less fast interactions<br /> 
+						&nbsp;&nbsp;&nbsp;-Abstract layered design<br /> 
+						&nbsp;&nbsp;&nbsp;-Action based events for RTS<br /> 
+						&nbsp;&nbsp;&nbsp;-Dead Reckoning<br /> 
+						&nbsp;&nbsp;&nbsp;-Incremental position updates for FPS<br /> 
+						&nbsp;&nbsp;&nbsp;-Compression<br /> 
+						&nbsp;&nbsp;&nbsp;-Zoning baed on a coordinating peer in P2P<br /> 
+						&nbsp;&nbsp;&nbsp;-Zoning in CS<br /> 
+						&nbsp;&nbsp;&nbsp;-Variant of Area Of Interest							
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_DS2010.png" width="128" alt=""  onclick="toggle_v(event, '#DS2010', '#DS2010_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Multi On A Row</b><br/>
+					<i>Nick Michiels and Wouter Nivelle</i><br/>
+					Course: Distributed Systems<br />
+					Language: C#/WPF
+					<br />
+					
+					<div>
+					<br />
+					</div>
+					<div class="clickDropDown">[<a id="DS2010_Button" href="" title="Click This Button" onclick="toggle_v(event, '#DS2010', '#DS2010_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="DS2010" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Playing Multi On A Row over a network of distributed systems.Some problems we intended to solve: <br /> 
+						&nbsp;&nbsp;&nbsp;-scalability<br /> 
+						&nbsp;&nbsp;&nbsp;-timing problems<br /> 
+						&nbsp;&nbsp;&nbsp;-delays<br /> 
+						&nbsp;&nbsp;&nbsp;-consistent game board<br /> 
+						&nbsp;&nbsp;&nbsp;-client crashes<br /> 
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_GCG2010.png" width="128" alt="" onclick="toggle_v(event, '#GCG2010', '#GCG2010_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Stochastische Raytracing and Image Warping</b><br/>
+					<i>Nick Michiels and Robin Marx</i><br/>
+					Course:Advanced Computer Graphics<br />
+					Language: C++ and OpenGL
+					<br />
+					
+					<div>
+					<br />
+					</div>
+					<div class="clickDropDown">[<a id="GCG2010_Button" href="" title="Click This Button" onclick="toggle_v(event, '#GCG2010', '#GCG2010_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="GCG2010" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Stochastic raytracing with Monte Carlo integration and an image warper.
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_infoVis2010.png" width="128" alt="" onclick="toggle_v(event, '#infoVis2010', '#infoVis2010_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Information Visualization</b><br/>
+					<i>Nick Michiels, Robin Marx and Jens Bruggemans</i><br/>
+					Course: Information Visualization<br />
+					Language: PHP/ActionScript/Flex/Elixir
+					<br />
+					
+					<div>
+					[<a href="education/infovis_paper_NickMichiels0623764.pdf" onClick="" title="pdf" target="_blank">paper 1 (dutch)</a>]
+					[<a href="education/RobinMarx_InfoVis_20092010.pdf" onClick="" title="pdf" target="_blank">paper 2 (dutch)</a>]
+					[<a href="education/InfovisPaperJensBruggemans.pdf" onClick="" title="pdf" target="_blank">paper 3 (dutch)</a>]
+					<br />	
+					[<a href="education/Probleem1.swf" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 800, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" class="highslide" title="pdf">mov 1</a>]
+					[<a href="education/Probleem2.swf" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 800, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" class="highslide" title="pdf">mov 2</a>]
+					[<a href="education/Probleem3.swf" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 800, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" class="highslide" title="pdf">mov 3</a>]
+					</div>
+					<div class="clickDropDown">[<a id="infoVis2010_Button" href="" title="Click This Button" onclick="toggle_v(event, '#infoVis2010', '#infoVis2010_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="infoVis2010" class="dropdown publiProj" >
+						<h3>Description</h3>
+						In this project we try to visualize a dataset as good as possible and solving some difficult problems.					
+					
+					</div>
+				</td>
+			</tr>
+			
+			</table>
+			
+			
+			<br />
+			<h2>3rd Bachelor (2008-2009)</h2>
+			
+			<table width="100%">
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_visitor2009.png" width="128" alt="" onclick="toggle_v(event, '#visitor2009', '#visitor2009_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Visitor</b><br/>
+					<i>Nick Michiels, Robin Marx, Jimmy Cleuren and Wouter Nivelle</i><br/>
+					Course: Architecture and Algorithms of Computer Games<br />
+					Language: C++, scripting
+					<br />
+					
+					<div>
+					[<a href="education/visitor-verslag-geheel.pdf" onClick="" title="pdf" target="_blank">report (dutch)</a>]
+					[<a href="education/visitor.msi" onClick="" title="binary" target="_blank">binary (Windows)</a>]
+					<br />
+					[<a href="https://www.youtube.com/embed/avNJMrjkR5I?rel=0&amp;wmode=transparent" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 800, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" class="highslide" title="pdf">mov (gameplay)</a>]
+					[<a href="https://www.youtube.com/embed/p0fa6dtDA7c?rel=0&amp;wmode=transparent" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 800, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" class="highslide" title="pdf">mov (network)</a>]
+					[<a href="https://www.youtube.com/embed/tC1MSs24oiw?rel=0&amp;wmode=transparent" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 800, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" class="highslide" title="pdf">mov (editor)</a>]
+					</div>
+					<div class="clickDropDown">[<a id="visitor2009_Button" href="" title="Click This Button" onclick="toggle_v(event, '#visitor2009', '#visitor2009_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="visitor2009" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Ogre3D: <br /> 
+						&nbsp;&nbsp;&nbsp;-Graphics<br /> 
+						&nbsp;&nbsp;&nbsp;-Animaties<br /> 
+						&nbsp;&nbsp;&nbsp;-Particles<br /> 
+						&nbsp;&nbsp;&nbsp;-Caelum voor skybox<br /> 
+						NxOgre en NVidia PhysX: <br /> 
+						&nbsp;&nbsp;&nbsp;-Convex hulls<br /> 
+						&nbsp;&nbsp;&nbsp;-Ragdolls<br /> 
+						&nbsp;&nbsp;&nbsp;-Collision detection<br /> 
+						&nbsp;&nbsp;&nbsp;-Forces<br /> 
+						&nbsp;&nbsp;&nbsp;-Constructions met joints<br /> 
+						&nbsp;&nbsp;&nbsp;-Triggers<br /> 
+						Awesomium: <br /> 
+						&nbsp;&nbsp;&nbsp;-GUI and HUD<br /> 
+						&nbsp;&nbsp;&nbsp;-Layout editors<br /> 
+						Lua en Luabind: <br /> 
+						&nbsp;&nbsp;&nbsp;-Scripting of levels, levelblocks and objecten<br /> 
+						&nbsp;&nbsp;&nbsp;-Creating new objects in game<br /> 
+						&nbsp;&nbsp;&nbsp;-Content creation<br /> 
+						AmigoLib en TinyXML: <br /> 
+						&nbsp;&nbsp;&nbsp;-Gestures<br /> 
+						Fmod: <br /> 
+						&nbsp;&nbsp;&nbsp;-Sound<br /> 
+						RakNet: <br /> 
+						&nbsp;&nbsp;&nbsp;-Communication via network<br /> 
+						&nbsp;&nbsp;&nbsp;-Object Serialization<br /> 
+						<br /><br />
+						<iframe width="580" height="435" src="https://www.youtube.com/embed/avNJMrjkR5I" frameborder="0" allowfullscreen></iframe>	
+						<br /><br />
+						<iframe width="580" height="435" src="https://www.youtube.com/embed/tC1MSs24oiw" frameborder="0" allowfullscreen></iframe>		
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_IMCS2009.png" width="128" alt="" onclick="toggle_v(event, '#IMCS2009', '#IMCS2009_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Multi-party audio conferencing & instant messaging</b><br/>
+					<i>Nick Michiels, Kevin Boutsen and Jan Oris</i><br/>
+					Course: Interactive Multimedia and Communication Systems<br />
+					Language: C++/Qt
+					<br />
+					
+					<div>
+					[<a href="education/IMCS_BIN.zip" onClick="" title="zip" target="_blank">binary</a>]
+
+					</div>
+					<div class="clickDropDown">[<a id="IMCS2009_Button" href="" title="Click This Button" onclick="toggle_v(event, '#IMCS2009', '#IMCS2009_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="IMCS2009" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Creating a conferencing and instant messaging system. Used protocols: RTP/RTCP for audio transmission and SIP for session handling.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_TMS2009.png" width="128" alt="" onclick="toggle_v(event, '#TMS2009', '#TMS2009_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Image and Video Compression</b><br/>
+					<i>Nick Michiels and Kenneth Devloo</i><br/>
+					Course: Technology of Multimedia Systems and Software<br />
+					Language: C++
+					<br />
+					
+					<div>
+					[<a href="education/VerslagImageAndVideoCompression.pdf" onClick="" title="pdf" target="_blank">report (dutch)</a>]
+					[<a href="education/ImageCompressionBIN.zip" onClick="" title="pdf" target="_blank">binary image compression</a>]
+					[<a href="education/VideoCompressionBIN.zip" onClick="" title="pdf" target="_blank">binary video compression</a>]
+
+					</div>
+					<div class="clickDropDown">[<a id="TMS2009_Button" href="" title="Click This Button" onclick="toggle_v(event, '#TMS2009', '#TMS2009_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="TMS2009" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Image Compression: Compressing a raw 256 Kb input image to an own specific JPEG encoding.
+						<br /> <br />
+						Video Compression: Compressing a raw YUV input video into an own specific video compression encoding.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_BV2009.png" width="128" alt="" onclick="toggle_v(event, '#BV2009', '#BV2009_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Two-scale Tone Management for Photographic Look</b><br/>
+					<i>Nick Michiels and Jan Oris</i><br/>
+					Course: Image Processing<br />
+					Language: Matlab
+					<br />
+					
+					<div>
+					[<a href="education/Verslag-Project-Beeldverwerking.pdf" onClick="" title="pdf" target="_blank">report (dutch)</a>]
+					[<a href="education/BV_examples.zip" onClick="" title="zip" target="_blank">example images</a>]
+					</div>
+					<div class="clickDropDown">[<a id="BV2009_Button" href="" title="Click This Button" onclick="toggle_v(event, '#BV2009', '#BV2009_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="BV2009" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Two-scale Tone Management for Photographic Look.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_SE2008.png" width="128" alt="" onclick="toggle_v(event, '#SE2008', '#SE2008_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Tungrorum</b><br/>
+					<i>Nick Michiels, Jimmy Cleuren, Wouter Nivelle, Kenneth Devloo and Kevin Boutsen</i><br/>
+					Course: Software Engineering<br />
+					Language: C#
+					<br />
+					
+					<div>
+					[<a href="education/SE_verslag_finaal.pdf" onClick="" title="pdf" target="_blank">report (dutch)</a>]
+					[<a href="education/Tungrorum.zip" onClick="" title="pdf" target="_blank">binary (Windows)</a>]
+					</div>
+					<div class="clickDropDown">[<a id="SE2008_Button" href="" title="Click This Button" onclick="toggle_v(event, '#SE2008', '#SE2008_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="SE2008" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Tungrorum is a roll playing game, based on the game Carcasonne.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_CN2008.png" width="128" alt="" onclick="toggle_v(event, '#CN2008', '#CN2008_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>FTP Client</b><br/>
+					<i>Nick Michiels and Kenneth Devloo</i><br/>
+					Course: Computer Networks<br />
+					Language: C++/Qt
+					<br />
+					
+					<div>
+					[<a href="education/FTPClient.zip" onClick="" title="pdf" target="_blank">binary (Windows)</a>]
+					</div>
+					<div class="clickDropDown">[<a id="CN2008_Button" href="" title="Click This Button" onclick="toggle_v(event, '#CN2008', '#CN2008_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="CN2008" class="dropdown publiProj" >
+						<h3>Description</h3>
+						FTP Client.
+					</div>
+				</td>
+			</tr>
+			
+			
+			</table>
+			
+			
+			<br />
+			<h2>2nd Bachelor (2007-2008)</h2>
+			
+			<table width="100%">
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_raycasting2008.png" width="128" alt="" onclick="toggle_v(event, '#raycasting2008', '#raycasting2008_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Raycasting Engine</b><br/>
+					<i>Nick Michiels and Kenneth Devloo</i><br/>
+					Course: Computer Networks<br />
+					Language: C++/Qt
+					<br />
+					
+					<div>
+					[<a href="education/raycastingVerslag.pdf" onClick="" title="pdf" target="_blank">report (dutch)</a>]
+					[<a href="education/raycasting.msi" onClick="" title="pdf" target="_blank">binary</a>]
+					[<a href="education/Raycasting/run.html" onClick="" title="play" target="_blank">play now (IE only)</a>]
+					
+					</div>
+					<div class="clickDropDown">[<a id="raycasting2008_Button" href="" title="Click This Button" onclick="toggle_v(event, '#raycasting2008', '#raycasting2008_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="raycasting2008" class="dropdown publiProj" >
+						<h3>Description</h3>
+						A raycasting engine and a powerful editor. Possibility to script the world. <br/><br/>
+						Features: <br/>
+						&nbsp;&nbsp;&nbsp;-Basic Raycasting Engine<br />
+						&nbsp;&nbsp;&nbsp;-High Resolution Textures with scaling resolution<br />
+						&nbsp;&nbsp;&nbsp;-Alpha-value Sprites<br />
+						&nbsp;&nbsp;&nbsp;-Editor to fully customize the scene<br />
+						&nbsp;&nbsp;&nbsp;-Interactive scene with scripting: triggering, events<br />
+						&nbsp;&nbsp;&nbsp;-Compass<br /><br />
+						
+						
+						
+						<a href="education/Raycasting/run.html" onClick="" title="play" target="_blank">Play Raycasting online (works only on Internet Explorer!)</a>
+						<br />
+						You can download full maps here: <a href="education/maps.zip" onClick="" title="maps" target="_blank">maps (i.e. voorbeeldje.txt)</a>
+						<br />
+						It can take a couple of minutes to load the app.<br />
+						&nbsp;&nbsp;&nbsp;-Key-Up: forward<br />
+						&nbsp;&nbsp;&nbsp;-Key-Down: backward<br />
+						&nbsp;&nbsp;&nbsp;-Key-Left: rotate left<br />
+						&nbsp;&nbsp;&nbsp;-Key-Right: rotate right<br />
+						&nbsp;&nbsp;&nbsp;-R: Look Up<br />
+						&nbsp;&nbsp;&nbsp;-F: Look Down<br />
+						&nbsp;&nbsp;&nbsp;-Space: Switch to mouse interaction<br />
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_CG2008.png" width="128" alt="" onclick="toggle_v(event, '#CG2008', '#CG2008_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Trekmania</b><br/>
+					<i>Nick Michiels and Robin Marx</i><br/>
+					Course: Computer Graphics<br />
+					Language: C++/OpenGL/3DS
+					<br />
+					
+					<div>
+					[<a href="education/trekmania.msi" onClick="" title="pdf" target="_blank">binary (Windows)</a>]
+					
+					</div>
+					<div class="clickDropDown">[<a id="CG2008_Button" href="" title="Click This Button" onclick="toggle_v(event, '#CG2008', '#CG2008_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="CG2008" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Mini Racing Game where you can step into a car and drive in a 3D world.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_advancedWebTech2008.png" width="128" alt=""  onclick="toggle_v(event, '#advancedWebTech2008', '#advancedWebTech2008_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Pathfinder</b><br/>
+					<i>Nick Michiels, Jimmy Cleuren and Robin Marx</i><br/>
+					Course: Advanced Web Technology<br />
+					Language: HTML/CSS/Javascript/Ajax/Java
+					<br />
+					
+					<div>
+					<br/>
+					
+					</div>
+					<div class="clickDropDown">[<a id="advancedWebTech2008_Button" href="" title="Click This Button" onclick="toggle_v(event, '#advancedWebTech2008', '#advancedWebTech2008_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="advancedWebTech2008" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Website for traveling. <br /><br />
+						HTML Templating System <br />
+						CSS Style <br />
+						Java Servlets <br />
+						Ajax Javascript
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_OOP2008.png" width="128" alt="" onclick="toggle_v(event, '#OOP2008', '#OOP2008_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Backgammon</b><br/>
+					<i>Nick Michiels and Kenneth Devloo</i><br/>
+					Course: Object Oriented Programming<br />
+					Language: C++/Qt
+					<br />
+					
+					<div>
+					[<a href="education/backgammon.msi" onClick="" title="pdf" target="_blank">binary (Windows)</a>]
+					
+					</div>
+					<div class="clickDropDown">[<a id="OOP2008_Button" href="" title="Click This Button" onclick="toggle_v(event, '#OOP2008', '#OOP2008_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="OOP2008" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Backgammon
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+			</table>
+			
+			
+			<br />
+			<h2>1st Bachelor (2006-2007)</h2>
+			
+			<table width="100%">
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_HI2007.png" width="128" alt="" onclick="toggle_v(event, '#HI2007', '#HI2007_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>UI used by children</b><br/>
+					<i>Nick Michiels, Kenneth Devloo, Tom Knapen and Sören Kuypers</i><br/>
+					Course: Human Informatics<br />
+					Language: C and GTK for UI
+					<br />
+
+					<div>
+					<br/>
+					
+					</div>
+					<div class="clickDropDown">[<a id="HI2007_Button" href="" title="Click This Button" onclick="toggle_v(event, '#HI2007', '#HI2007_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="HI2007" class="dropdown publiProj" >
+						<h3>Description</h3>
+						UI for a program used by children. The purpose is to learn the children recognizing and writing words. For each age you can choose a difficulty. The words are categorized (i.e. nature, traffic, …).
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_CImpP2007.png" width="128" alt="" onclick="toggle_v(event, '#CImpP2007', '#CImpP2007_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Vacation Database without UI</b><br/>
+					<i>Nick Michiels, Kenneth Devloo and Sören Kuypers</i><br/>
+					Course: C Imperative Programming<br />
+					Language: C
+					<br />
+
+					<div>
+					<br/>
+					
+					</div>
+					<div class="clickDropDown">[<a id="CImpP2007_Button" href="" title="Click This Button" onclick="toggle_v(event, '#CImpP2007', '#CImpP2007_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="CImpP2007" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Vacation Database with a console interface.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_webTech2007.png" width="128" alt="" onclick="toggle_v(event, '#webTech2007', '#webTech2007_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Portfolio Website</b><br/>
+					<i>Nick Michiels</i><br/>
+					Course: Introduction to Web Technology<br />
+					Language: HTML/Javascript/PHP/SQL
+					<br />
+
+					<div>
+					<br/>
+					
+					</div>
+					<div class="clickDropDown">[<a id="webTech2007_Button" href="" title="Click This Button" onclick="toggle_v(event, '#webTech2007', '#webTech2007_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="webTech2007" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Interactive portfolio website written in PHP
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="education/thumb_website2007.png" width="128" alt="" onclick="toggle_v(event, '#website2007', '#website2007_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+					<b>Basic Website</b><br/>
+					<i>Nick Michiels</i><br/>
+					Course: Basic tools in computer science<br />
+					Language: HTML
+					<br />
+
+					<div>
+					<br/>
+					
+					</div>
+					<div class="clickDropDown">[<a id="website2007_Button" href="" title="Click This Button" onclick="toggle_v(event, '#website2007', '#website2007_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					
+					
+					<div id="website2007" class="dropdown publiProj" >
+						<h3>Description</h3>
+						Basic website written in HTML.
+					</div>
+				</td>
+			</tr>
+			
+			</table>
+		</div>
+	</div>
+ 
+	<div id="footer" class="row">
+		<div class="col c12 aligncenter">
+			<h3>&copy; 2020 Nick Michiels</h3>
+			<p><a href="http://andreasviklund.com/templates/origo/" target="_blank">Template design</a> by <a href="http://andreasviklund.com/" target="_blank">Andreas Viklund</a></p>
+		</div>
+	</div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name" />
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="origo.css" title="Origo" media="all" />
+	<title>Nick Michiels</title>
+
+
+	<!--
+	1 ) Reference to the files containing the JavaScript and CSS.
+	These files must be located on your server.
+-->
+
+<script type="text/javascript" src="highslide/highslide.js"></script>
+
+<!--<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="../highslide/highslide-ie6.css" />
+<![endif]-->
+
+
+
+<!--
+    2) Optionally override the settings defined at the top
+    of the highslide.js file. The parameter hs.graphicsDir is important!
+-->
+
+<script type="text/javascript">
+//<![CDATA[
+hs.registerOverlay({
+	html: '<div class="closebutton" onclick="return hs.close(this)" title="Close"></div>',
+	position: 'top right',
+	fade: 2 // fading the semi-transparent overlay looks bad in IE
+});
+
+
+hs.graphicsDir = 'highslide/graphics/';
+hs.wrapperClassName = 'borderless';
+//]]>
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function toggle_v(e, name, button)
+{
+	e.preventDefault();
+	 $(name).slideToggle( 'fast', 'swing');
+	 if ($(button).text() == 'close') {
+		$(button).text('click here for more info/results');
+		}
+		else {
+		$(button).text('close');
+		}
+	 
+	 
+	
+}
+$(document).ready(function(e){
+ 
+
+  
+ 
+})
+
+</script>
+
+
+</head>
+
+<body class="light green smaller freestyle01" onLoad="resettoggle()">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58712747-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div id="layout">
+ 
+	<div class="row smaller">
+		<div class="col c5 smaller">
+			<h1><a href="index.html">Nick Michiels</a></h1>
+		</div>
+		
+		<div class="col c7 aligncenter">
+			<p class="slogan">Researcher - Expertise Centre for Digital Media - Hasselt University</p>
+		</div>
+	</div>
+  
+	<div class="row">
+		<div class="col c12 aligncenter">
+			<img src="images/front.jpg" width="960" height="240" alt="" />
+		</div>
+	</div>
+ 
+	<div class="row" id="slide">
+		<div class="col c2 alignleft">
+			<ul class="menu">
+				<li><a href="index.html">About me</a></li>
+				<li><a href="publications.html">Publications</a></li>
+				<li><a href="teaching.html">Teaching</a></li>
+				<li><a href="research.html">Research Projects</a>
+				<li><a href="education.html">Educational Projects</a>
+					<!--
+					<ul class="subpages">
+						<li><a href="index.html">3 columns</a></li>
+						<li><a class="current" href="2-col-a.html">2 columns A</a></li>
+						<li><a href="2-col-b.html">2 columns B</a></li>
+					</ul>
+					-->
+				</li>
+				<!--<li><a href="#">Links</a></li>-->
+			</ul>
+		</div>
+ 
+		<div class="col c10">
+
+		
+			<h2>Publications</h2>
+			<br/>
+			<h2>2018</h2>
+			
+			<table width="100%">
+			
+			
+			
+			<!-- Chakroun et al., BIBM 2018 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Chakroun_BIBM18/thumb_Chakroun_BIBM18.png" width="128" alt="" onclick="toggle_v(event, '#Chakroun_BIBM18', '#Chakroun_BIBM18_Button');"></td>
+				<td> 
+				<div class="publiInfo">
+				<b>GPU-accelerated CellProfiler</b><br/>
+				<a href="http://www.imen-chakroun.net/" title="Imen Chakroun" target="_blank">Imen Chakroun</a>,
+				<a href="https://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a> and
+				<a href="https://people.cs.kuleuven.be/~roel.wuyts/" title="Roel Wuyts" target="_blank">Roel Wuyts</a><br />
+				In proceedings of the <i>IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2018)</i>, Madrid, 3-6 December 2018.
+
+					<div>
+					<!--[<a href="publications/Chakroun_BIBM18/Chakroun_BIBM18.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="https://dl.acm.org/citation.cfm?id=3281539" target="_blank" onClick="" title="bib">url</a>]-->
+					</div>
+					
+					<div class="clickDropDown">[<a id="Chakroun_BIBM18_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Chakroun_BIBM18', '#Chakroun_BIBM18_Button');">click here for more info/results</a>]</div>
+					
+
+					<div id="Chakroun_BIBM18" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						CellProfiler excels at bridging the gap between advanced image analysis algorithms and scientists who lack computational expertise. It lacks however high performance capabilities needed for High Throughput Imaging experiments where workloads reach hundreds of TB of data and are computationally very demanding. In this work, we introduce a GPU-accelerated CellProfiler where the most time-consuming algorithmic steps are executed on Graphics Processing Units. Experiments on a benchmark dataset showed significant speedup over both single and multi-core CPU versions. The overall execution time was reduced from 9.83 Days to 31.64 Hours.
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+			<!-- Wijnants et al., VRST 2018 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Wijnants_VRST18/thumb_Wijnants_VRST18.png" width="128" alt="" onclick="toggle_v(event, '#Wijnants_VRST18', '#Wijnants_VRST18_Button');"></td>
+				<td> 
+				<div class="publiInfo">
+				<b>Standards-compliant HTTP Adaptive Streaming of Static Light Fields</b><br/>
+				<a href="https://www.uhasselt.be/fiche_edm?voornaam=maarten&naam=wijnants" title="Maarten Wijnants" target="_blank">Maarten Wijnants</a>,
+				<a href="https://www.uhasselt.be/fiche_edm?voornaam=hendrik&naam=lievens" title="Hendrik Lievens" target="_blank">Hendrik Lievens</a>,
+				<a href="https://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a>, 
+				<a href="https://www.uhasselt.be/fiche_edm?voornaam=jeroen&naam=put" title="Jeroen Put" target="_blank">Jeroen Put</a>,
+				<a href="https://www.uhasselt.be/fiche_edm?voornaam=peter&naam=quax" title="Peter Quax" target="_blank">Peter Quax</a> and
+				<a href="https://www.uhasselt.be/fiche_edm?voornaam=wim&naam=lamotte" title="Wim Lamotte" target="_blank">Wim Lamotte</a><br />
+				In proceedings of the <i>ACM Symposium on Virtual Reality Software and Technology (VRST 2018)</i>, Tokyo, Japan, November 28 - December 1, 2018.
+
+					<div>
+					[<a href="publications/Wijnants_VRST18/Wijnants_VRST18.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="https://dl.acm.org/citation.cfm?id=3281539" target="_blank" onClick="" title="bib">url</a>]
+					</div>
+					
+					
+					
+					<div class="clickDropDown">[<a id="Wijnants_VRST18_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Wijnants_VRST18', '#Wijnants_VRST18_Button');">click here for more info/results</a>]</div>
+					
+
+					<div id="Wijnants_VRST18" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						Static light fields are an effective technology to precisely visualize complex inanimate objects or scenes, synthetic and real-world alike, in Augmented, Mixed and Virtual Reality contexts. Such light fields are commonly sampled as a collection of 2D images. This sampling methodology inevitably gives rise to large data volumes, which in turn hampers real-time light field streaming over best effort networks, particularly the Internet. This paper advocates the packaging of the source images of a static light field as a segmented video sequence so that the light field can then be interactively network streamed in a quality-variant fashion using MPEG-DASH, the standardized HTTP Adaptive Streaming scheme adopted by leading video streaming services like YouTube and Netflix. We explain how we appropriate MPEG-DASH for the purpose of adaptive static light field streaming and present experimental results that prove the feasibility of our approach, not only from a networking but also a rendering perspective. In particular, real-time rendering performance is achieved by leveraging video decoding hardware included in contemporary consumer-grade GPUs. Important trade-offs are investigated and reported on that impact performance, both network-wise (e.g., applied sequencing order and segmentation scheme for the source images of the static light field) and rendering-wise (e.g., disk-versus-GPU caching of source images). By adopting a standardized transmission scheme and by exclusively relying on commodity graphics hardware, the net result of our work is an interoperable and broadly deployable network streaming solution for static light fields.
+						
+						<br /><br />
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/aedPQmTXyFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+			<!-- Put et al., AMDO 2018 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Put_AMDO18/thumb_Put_AMDO18.png" width="128" alt="" onclick="toggle_v(event, '#Put_AMDO18', '#Put_AMDO18_Button');"></td>
+				<td> 
+				<div class="publiInfo">
+				<b>Capturing Industrial Machinery into Virtual Reality</b><br/>
+				<a href="https://www.uhasselt.be/fiche_edm?voornaam=jeroen&naam=put" title="Jeroen Put" target="_blank">Jeroen Put</a>,
+				<a href="https://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a>, 
+				<a href="https://www.uhasselt.be/fiche_edm?voornaam=fabian&naam=difiore" title="Fabian Di Fiore" target="_blank">Fabian Di Fiore</a> and
+				<a href="https://www.uhasselt.be/fiche_edm?voornaam=frank&naam=vanreeth" title="Frank Van Reeth" target="_blank">Frank Van Reeth</a><br />
+				In proceedings of <i>Articulated Motion and Deformable Objects 2018 (AMDO 2018)</i>, <!--pp. 16.1-16.13,--> Springer International Publishing, Cham, July 2018.
+
+					<div>
+					[<a href="publications/Put_AMDO18/Put_AMDO18.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="https://link.springer.com/chapter/10.1007/978-3-319-94544-6_5" target="_blank" onClick="" title="bib">url</a>]
+					</div>
+					
+					
+					
+					<div class="clickDropDown">[<a id="Put_AMDO18_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Put_AMDO18', '#Put_AMDO18_Button');">click here for more info/results</a>]</div>
+					
+
+					<div id="Put_AMDO18" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						In this paper we set out to find a new technical and commercial solution to easily acquire a virtual model of existing machinery for visualisation in a VR environment. To this end we introduce an image-based scanning approach with an initial focus on a monocular (handheld) capturing device such as a portable camera. Poses of the camera will be estimated with a Simultaneous Localisation and Mapping technique. Depending on the required quality offline calibration is incorporated by means of ArUco markers placed within the captured scene. Once the images are captured, they are compressed in a format that allows rapid low-latency streaming and decoding on the GPU. Finally, upon viewing the model in a VR environment, an optical flow method is used to interpolate between the triangulisation of the captured viewpoints to deliver a smooth VR experience. We believe our tool will facilitate the capturing of machinery into VR providing a wide range of benefits such as doing marketing, providing offsite help and performing remote maintenance.
+					</div>
+				</td>
+			</tr>
+			
+			</table>
+			
+			
+			<br/>
+			<h2>2016</h2>
+			
+			<table width="100%">
+			<!-- Michiels., Doctoral Dissertation 2016 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Michiels_dissertation/thumb_Michiels_dissertation.png" width="128" alt="" onclick="toggle_v(event, '#Michiels_dissertation', '#Michiels_dissertation_Button');"></td>
+				<td> 
+				<div class="publiInfo">
+				<b>Representations and Algorithms for Interactive Relighting</b><br/>
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a>, Advisor: <a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a>,<br />
+				 Doctoral Dissertation</i>, <!--pp. 16.1-16.13,--> Hasselt University, Belgium, December 2016.
+
+					<div>
+					[<a href="publications/Michiels_dissertation/NickMichiels-PhD.pdf" target="_blank" onClick="" title="pdf">pdf</a>]
+					[<a href="publications/Michiels_dissertation/NickMichiels-PhD_lowres.pdf" target="_blank" onClick="" title="pdf (low res)">pdf (low res)</a>]
+					[<a href="https://uhdspace.uhasselt.be/dspace/handle/1942/22860" target="_blank" onClick="" title="doi">doi</a>]
+					[<a href="publications/Michiels_dissertation/Michiels2016_RAIR.bib" target="_blank" onClick="" title="bib">bib</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="Michiels_dissertation_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Michiels_dissertation', '#Michiels_dissertation_Button');">click here for more info/results</a>]</div>
+					
+
+					<div id="Michiels_dissertation" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						Classic relighting applications are striving to unite the virtual world and the real world by
+						applying computer graphics algorithms to pixel and image-based descriptions. This has allowed
+						them to apply new virtual lighting conditions on real images as well as inserting virtual
+						objects in real environments under credible lighting conditions. However, state-of-the-art
+						representations for geometry, materials and lighting often limit the capabilities and quality of
+						the simulation of light in relighting applications. Spherical harmonics allow for a fast simulation
+						of light, but can only handle low-frequency lighting effects efficiently. In addition,
+						other relighting applications rely on Haar wavelets; which are capable of representing highfrequency
+						lighting information as well as having great compression performance. In theory,
+						Haar wavelets have an efficient forward rendering evaluation method. However, in practice,
+						they need a complex rotation operator and the three factors of the rendering equation can
+						not be constructed dynamically. In addition, they lack smoothness, which is essential for
+						relighting applications. To overcome most of these constraints, this dissertation researched
+						other, possibly better, representations. This dissertation introduces two new underlying basis
+						representations designed to improve cutting edge relighting algorithms.
+						<p></p>
+						First, we will introduce an efficient algorithm to calculate the triple product integral binding
+						coefficients for a heterogeneous mix of wavelet bases. As mentioned above, Haar wavelets
+						excel at encoding piecewise constant signals, but are inadequate for compactly representing
+						smooth signals for which high-order wavelets are ideal. Our algorithm provides an efficient
+						way to calculate the tensor of these binding coefficients, which is essential for the correct
+						evaluation of the light transport integral. The algorithm exploits both the hierarchical nature
+						and vanishing moments of the wavelet bases, as well as the sparsity and symmetry of the tensor.
+						The effectiveness of high-order wavelets will be demonstrated in a rendering application.
+						The smoother wavelets represent the signals more effectively and with less blockiness than
+						their Haar wavelet counterpart.
+						<p></p>
+						Using a heterogeneous mix of wavelets allows us to overcome the smoothness problem. However,
+						wavelets still constrain one or several factors of the rendering equation, keeping them inadequate for more interactive rendering applications. For example, visibility is often precalculated
+						and animations are not allowed; and changes in lighting are limited to a simple rotation
+						and are not very detailed. Other techniques compromise on quality and often coarsely
+						tabulate BRDF functions. In the second part of this dissertation, we research how spherical
+						radial basis functions (SRBFs) can be used to overcome most of these problems. SRBFs
+						have already been used in forward rendering, but they still do not guarantee full interactivity
+						of the underlying factors of geometry, materials and lighting. We argue that an interactive
+						representation of the factors is crucial and will greatly improve the flexibility and efficiency
+						of a relighting algorithm. In order to dynamically change lighting conditions or alter scene
+						geometry and materials, these three factors need to be converted to the SRBF representation
+						in a fast manner. This dissertation presents a method to perform the SRBF data construction
+						and rendering in real-time. To support dynamic high-frequency lighting, a multiscale residual
+						transformation algorithm is applied. Area lights are detected through a peak detection
+						algorithm. By using voxel cone tracing and a subsampling scheme, animated geometry casts
+						soft shadows dynamically.
+						<p></p>
+						At this point, we have two new approaches for evaluating triple product rendering integrals
+						with fewer coefficients and an advantageous smoothness behavior. But how will they perform
+						in actual relighting applications? We tried to answer this question in the final part of this
+						dissertation by conducting experiments in two distinct use cases.
+						<p></p>
+						A first use case focuses on the relighting of virtual objects with real lighting information of
+						existing scenes. To demonstrate this, we have developed an augmented reality application.
+						The ambition is to augment omnidirectional video, also called 360 degrees video, with natural lit
+						virtual objects and to make the experience more realistic for users. Recent years have known
+						a proliferation of real-time capturing and rendering methods for omnidirectional video. Together
+						with these technologies, rendering devices such as virtual reality glasses have tried to
+						increase the immersive experience of users. Structure-from-motion is applied to the omnidirectional
+						video to reconstruct the trajectory of the camera. Then, the position of an inserted
+						virtual object is linked to the appropriate 360 degrees environment map. State-of-the-art augmented
+						reality applications have often lacked realistic appearance and lighting, but our spherical radial
+						basis rendering framework is capable of evaluating the rendering equation in real-time
+						with fully dynamic factors. The captured omnidirectional video can be directly used as lighting
+						information by feeding it to our renderer, where it is instantly transformed to the proper
+						SRBF basis. We demonstrate an application in which a computer generated vehicle can be
+						controlled through an urban environment.
+						<p></p>
+						The second use case addresses the relighting of real objects. It will show more practical
+						examples of how an improved representation will influence the quality and time performance
+						of existing inverse rendering and intrinsic image decomposition applications. Such relighting
+						techniques try to extract geometry, material and lighting information of real scenes out of one or multiple input images. First, we show how an inverse rendering technique, as introduced
+						by Haber et al. [Haber et al., 2009], would benefit from the smooth behavior of our high-order
+						wavelet or SRBF representation. To allow for a hierarchical optimization algorithm, where
+						the lower level coefficients are estimated first and then more detailed coefficients are inserted
+						based on the well-posedness of the system, it is essential that the lower level coefficients are
+						good approximates of the signal to estimate and thus have a smooth behavior. Besides a better
+						refinement method, we also show how an integration with our SRBF triple product renderer
+						will reduce the execution time of the optimization process from hours to minutes. Then, in
+						a second application, we conduct experiments on the existing intrinsic image decomposition
+						problem of Barron and Malik [Barron and Malik, 2015], where we used our SRBF renderer in
+						combination with a prior based optimization method. We achieve this by adapting the SRBF
+						rendering framework to export the proper gradients for the L-BFGS minimization step.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<!-- Put et al., BMVC 2016 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Put_BMVC16/thumb_Put_BMVC16.png" width="128" alt="" onclick="toggle_v(event, '#Put_BMVC16', '#Put_BMVC16_Button');"></td>
+				<td> 
+				<div class="publiInfo">
+				<b>Material-Specific Chromaticity Priors</b><br/>
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=jeroen&naam=put" title="Jeroen Put" target="_blank">Jeroen Put</a>,
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a> and 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a>, <br />
+				In proceedings of <i>The 27th British Machine Vision Conference (BMVC 2016)</i>, <!--pp. 16.1-16.13,--> BMVA Press, York, UK, September 2016.
+
+					<div>
+					[<a href="publications/Put_BMVC16/abstract_Put_BMVC2016.pdf" target="_blank" onClick="" title="abstract">abstract</a>]
+					[<a href="publications/Put_BMVC16/paper_Put_BMVC2016.pdf" target="_blank" onClick="" title="pdf">pdf</a>]
+					[<a href="publications/Put_BMVC16/poster_Put_BMVC2016.pdf" target="_blank" onClick="" title="poster">poster</a>]
+					[<a href="publications/Put_BMVC16/Put_BMVC2016.bib" target="_blank" onClick="" title="bib">bib</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="Put_BMVC16_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Put_BMVC16', '#Put_BMVC16_Button');">click here for more info/results</a>]</div>
+					
+
+					<div id="Put_BMVC16" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						Recent advances in machine learning have enabled the recognition of high-level categories of materials with a reasonable accuracy. With these techniques, we can construct a per-pixel material labeling from a single image. We observe that groups of high-level material categories have distinct chromaticity distributions. This fact can be used to predict the range of the absolute chromaticity values of objects, provided the material is correctly labeled. We explore whether these constraints are useful in the context of the intrinsic images problem. This paper describes how to leverage material category identification to boost estimation results in state-of-the-art intrinsic images datasets.
+					</div>
+				</td>
+			</tr>
+			
+			</table>
+			
+			<br/>
+			<h2>2015</h2>
+			
+			<table width="100%">
+			
+			<!-- Put et al., BMVC 2015 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Put_BMVC15/thumb_Put_BMVC15.png" width="128" alt="" onclick="toggle_v(event, '#Put_BMVC15', '#Put_BMVC15_Button');"></td>
+				<td> 
+				<div class="publiInfo">
+				<b>Using Near-Field Light Sources to Separate Illumination from BRDF</b><br/>
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=jeroen&naam=put" title="Jeroen Put" target="_blank">Jeroen Put</a>,
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a> and 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a>, <br />
+				In proceedings of <i>The 26th British Machine Vision Conference (BMVC 2015)</i>, pp. 16.1-16.13, BMVA Press, Swansea, UK, September 2015.
+
+					<div>
+					[<a href="publications/Put_BMVC15/abstract_Put_BMVC2015.pdf" target="_blank" onClick="" title="abstract">abstract</a>]
+					[<a href="publications/Put_BMVC15/paper_Put_BMVC2015.pdf" target="_blank" onClick="" title="pdf">pdf</a>]
+					[<a href="publications/Put_BMVC15/poster_Put_BMVC2015.pdf" target="_blank" onClick="" title="poster">poster</a>]
+					[<a href="publications/Put_BMVC15/Put_BMVC2015.bib" target="_blank" onClick="" title="bib">bib</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="Put_BMVC15_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Put_BMVC15', '#Put_BMVC15_Button');">click here for more info/results</a>]</div>
+					
+
+					<div id="Put_BMVC15" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+					Simultaneous estimation of lighting and BRDF from multi-view images is an interesting problem in computer vision. It allows for exciting applications, such as flexible relighting in post-production, without recapturing the scene. Unfortunately, the estimation problem is made difficult because lighting and BRDF have closely entangled effects in the input images. This paper presents an algorithm to support both the estimation of distant and near-field illumination. Previous techniques are limited to distant lighting. We contribute by proposing an additional factorization of the lighting, while keeping the rendering efficient and additional data compactly stored in the wavelet domain. We reduce complexity by clustering the scene geometry into a few groups of important emitters and calculate the emitting powers by alternately solving for illumination and reflectance. We demonstrate our work on a synthetic and real datasets and show that a clean separation of distant and near-field illumination leads to a more accurate estimation and separation of lighting and BRDF.
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+			<!-- Michiels et al., VISIGRAPP 2015 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Michiels_VISIGRAP15/thumb_Michiels_VISIGRAP15.png" width="128" alt="" onclick="toggle_v(event, '#Michiels_VISIGRAP15', '#Michiels_VISIGRAP15_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+				<b>Interactive Relighting of Virtual Objects under Environment Lighting</b><br/>
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a>, 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=jeroen&naam=put" title="Jeroen Put" target="_blank">Jeroen Put</a> and 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a>, <br />
+				In proceedings of <i>The 10th International Conference on Computer Graphics Theory and Applications (GRAPP 2015)</i>, pp. 220-228, Berlin, Germany, March 2015.
+
+					<div>
+					[<a href="publications/Michiels_VISIGRAP15/Michiels_GRAPP15.pdf" target="_blank" onClick="" title="pdf">pdf</a>]
+					[<a href="publications/Michiels_VISIGRAP15/Michiels_GRAPP15.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="http://dx.doi.org/10.5220/0005360102200228" target="_blank" onClick="" title="doi">doi</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="Michiels_VISIGRAP15_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Michiels_VISIGRAP15', '#Michiels_VISIGRAP15_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="Michiels_VISIGRAP15" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						Current relighting applications often constrain one or several factors of the rendering equation to keep the rendering
+						speed real-time. For example, visibility is often precalculated and animations are not allowed, changes
+						in lighting are limited to simple rotation or the lighting is not very detailed. Other techniques compromise on
+						quality and often coarsely tabulate BRDF functions. In order to solve these problems, some techniques have
+						started to use spherical radial basis functions. However, solving the triple product integral does not guarantee
+						interactivity. In order to dynamically change lighting conditions or alter scene geometry and materials, these
+						three factors need to be converted to the SRBF representation in a fast manner. This paper presents a method to
+						perform the SRBF data construction and rendering in real-time. To support dynamic high-frequency lighting,
+						a multiscale residual transformation algorithm is applied. Area lights are detected through a peak detection
+						algorithm. By using voxel cone tracing and a subsampling scheme, animated geometry casts soft shadows
+						dynamically. We demonstrate the effectiveness of our method with a real-time application. Users can shine
+						with multiple light sources onto a camera and the animated virtual scene is relit accordingly.
+						<br/><br/>
+						<h3>Results</h3>
+						
+						<iframe width="580" height="435" src="https://www.youtube.com/embed/vnFsd6vqzIY" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</td>
+			</tr>
+			
+			</table>
+			
+			
+			
+			<br />
+			<h2>2014</h2>
+			
+			<table width="100%">
+			<!-- Michiels et al., Salento AVR 2014 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/AVR2014/thumb_Michiels_AVR2014.png" width="128" alt="" onclick="toggle_v(event, '#Michiels_AVR2014', '#Michiels_AVR2014_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+				<b>Interactive Augmented Omnidirectional Video with Realistic Lighting</b><br/>
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a>, 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=lode&naam=jorissen" title="Lode Jorissen" target="_blank">Lode Jorissen</a>, 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=jeroen&naam=put" title="Jeroen Put" target="_blank">Jeroen Put</a> and 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a>, <br />
+				In proceedings of <i>The International Conference on Augmented and Virtual Reality (SALENTO AVR 2014)</i>, pp. 247-263, Lecce, Italy, September 2014.
+					
+					
+					<div>
+					[<a href="publications/AVR2014/Michiels_AVR2014.pdf" target="_blank" onClick="" title="pdf">pdf</a>]
+					[<a href="publications/AVR2014/Michiels_AVR2014.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="http://dx.doi.org/10.1007/978-3-319-13969-2_19" target="_blank" onClick="" title="doi">doi</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="Michiels_AVR2014_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Michiels_AVR2014', '#Michiels_AVR2014_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="Michiels_AVR2014" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						This paper presents the augmentation of immersive omnidirectional
+						video with realistically lit objects. Recent years have known a proliferation of
+						real-time capturing and rendering methods of omnidirectional video. Together
+						with these technologies, rendering devices such as Oculus Rift have increased the
+						immersive experience of users. We demonstrate the use of structure from motion
+						on omnidirectional video to reconstruct the trajectory of the camera. The position
+						of the car is then linked to an appropriate 360 degrees environment map. State-of-the-art
+						augmented reality applications have often lacked realistic appearance and lighting.
+						Our system is capable of evaluating the rendering equation in real-time, by
+						using the captured omnidirectional video as a lighting environment. We demonstrate
+						an application in which a computer generated vehicle can be controlled
+						through an urban environment.
+						<br/><br/>
+						<h3>Results</h3>
+					
+						<table class="image"><tr><td>
+						<a href="publications/AVR2014/teaser.png" class="highslide" onclick="return hs.expand(this)"  title="Click to enlarge">
+						<img class="shadow" src="publications/AVR2014/teaser.png" alt="Highslide JS"/></a>
+						<caption align="bottom" class="caption">
+						Illustration of real-time augmented rendering of virtual objects in an omnidirectional environment. The 360 degrees video is used as environment map for realistic lighting.
+						</caption>
+						</td></tr></table>
+						<br />
+						<iframe width="580" height="435" src="https://www.youtube.com/embed/gwftfqfY9WM" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</td>
+			</tr>
+			
+			<!-- Michiels et al., SIGMAP 2014 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Michiels_SIGMAP14/thumb_Michiels_SIGMAP14.png" width="128" alt="" onclick="toggle_v(event, '#Michiels_SIGMAP14', '#Michiels_SIGMAP14_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+				<b>Product Integral Binding Coefficients for High-order Wavelets</b><br/>
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a>, 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=jeroen&naam=put" title="Jeroen Put" target="_blank">Jeroen Put</a> and 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a>, <br />
+				In proceedings of <i>The 11th International Conference on Signal Processing and Multimedia Applications (SIGMAP 2014)</i>, pp 17-24., Vienna, Austria, August 2014.
+					
+					
+					<div>
+					[<a href="publications/Michiels_SIGMAP14/Michiels_SIGMAP14.pdf" target="_blank" onClick="" title="pdf">pdf</a>]
+					[<a href="publications/Michiels_SIGMAP14/Michiels_SIGMAP14.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="http://dx.doi.org/10.5220/0005013300170024" target="_blank" onClick="" title="doi">doi</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="Michiels_SIGMAP14_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Michiels_SIGMAP14', '#Michiels_SIGMAP14_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="Michiels_SIGMAP14" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						This paper provides an efficient algorithm to calculate product integral binding coefficients for a heterogeneous
+						mix of wavelet bases. These product integrals are ubiquitous in multiple applications such as signal processing
+						and rendering. Previous work has focused on simple Haar wavelets. Haar wavelets excel at encoding piecewise
+						constant signals, but are inadequate for compactly representing smooth signals for which high-order wavelets
+						are ideal. Our algorithm provides an efficient way to calculate the tensor of these binding coefficients. The
+						algorithm exploits both the hierarchical nature and vanishing moments of the wavelet bases, as well as the
+						sparsity and symmetry of the tensor. We demonstrate the effectiveness of high-order wavelets with a rendering
+						application. The smoother wavelets represent the signals more effectively and with less blockiness than the
+						Haar wavelets of previous techniques.
+					</div>
+				</td>
+			</tr>
+			
+			<!-- Jorissen et al., 3DTV-CON 2014 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Jorissen_3DTVCON14/thumb_Jorissen_3DTVCON14.png" width="128" alt="" onclick="toggle_v(event, '#Jorissen_3DTVCON14', '#Jorissen_3DTVCON14_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+				<b>A qualitative comparison of MPEG view synthesis and light field rendering</b><br/>
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=lode&naam=jorissen" title="Lode Jorissen" target="_blank">Lode Jorissen</a>, 
+				<a href="http://www.patrikgoorts.com/" title="Patrik Goorts" target="_blank">Patrik Goorts</a>, 
+				Bram Bex, 
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a>,
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=sammy&naam=rogmans" title="Sammy Rogmans" target="_blank">Sammy Rogmans</a>, 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a> and
+				<a href="http://lisa.ulb.ac.be/image/index.php/Gauthier_LAFRUIT" title="Gauthier Lafruit" target="_blank">Gauthier Lafruit</a>, <br />
+				In proceedings of <i>3DTV-Conference: The True Vision - Capture, Transmission and Display of 3D Video (3DTV-CON 2014)</i>, pp. 1-4, Budapest, Hungary, July 2014.
+
+					<div>
+					[<a href="publications/Jorissen_3DTVCON14/Jorissen_3DTVCON14.pdf" target="_blank" onClick="" title="pdf">pdf</a>]
+					[<a href="publications/Jorissen_3DTVCON14/Jorissen_3DTVCON14.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="http://dx.doi.org/10.1109/3DTV.2014.6874741" target="_blank" onClick="" title="doi">doi</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="Jorissen_3DTVCON14_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Jorissen_3DTVCON14', '#Jorissen_3DTVCON14_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="Jorissen_3DTVCON14" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						Free Viewpoint Television (FTV) is a new modality in next generation television, which provides the viewer free navigation through the scene, using image-based view synthesis from a couple of camera view inputs. The recently developed MPEG reference software technology is, however, restricted to narrow baselines and linear camera arrangements. Its reference software currently implements stereo matching and interpolation techniques, designed mainly to support three camera inputs (middle-left and middleright stereo). Especially in view of future use case scenarios in multi-scopic 3D displays, where hundreds of output views are generated from a limited number (tens) of wide baseline input views, it becomes mandatory to fully exploit all input camera information to its maximal potential. We therefore revisit existing view interpolation techniques to support dozens of camera inputs for better view synthesis performance. In particular, we show that Light Fields yield average PSNR gains of approximately 5 dB over MPEG's existing depth-based multiview video technology, even in the presence of large baselines.
+					</div>
+				</td>
+			</tr>
+			
+			
+			<!-- Put et al., VISIGRAPP 2014 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Put_VISIGRAP14/thumb_Put_VISIGRAP14.png" width="128" alt="" onclick="toggle_v(event, '#Put_VISIGRAP14', '#Put_VISIGRAP14_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+				<b>Exploiting Material Properties to Select a Suitable Wavelet Basis for Efficient Rendering</b><br/>
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=jeroen&naam=put" title="Jeroen Put" target="_blank">Jeroen Put</a>, 
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a> and 
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a>, <br />
+				In proceedings of <i>The 9th International Conference on Computer Graphics Theory and Applications (GRAPP 2014)</i>, pp. 218-224, Lisbon, Portugal, Januari 2014.
+
+					<div>
+					[<a href="publications/Put_VISIGRAP14/Put_VISIGRAP14.pdf" target="_blank" onClick="" title="pdf">pdf</a>]
+					[<a href="publications/Put_VISIGRAP14/Put_VISIGRAP14.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="http://dx.doi.org/10.5220/0004717202180224" target="_blank" onClick="" title="doi">doi</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="Put_VISIGRAP14_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Put_VISIGRAP14', '#Put_VISIGRAP14_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="Put_VISIGRAP14" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						Nearly-orthogonal spherical wavelet bases can be used to perform rendering at higher quality and with significantly
+						less coefficients for certain spherical functions, e.g. BRDF data. This basis avoids parameterisation
+						artifacts from previous 2D methods, while at the same time retaining high-frequency details in the lighting.
+						This paper demonstrates the efficiency of this representation for rendering purposes. Regular 2D Haar
+						wavelets can still occasionally perform better, however. This is due to their property of being fully orthogonal.
+						An important novelty of this paper lies in the introduction of a technique to select an appropriate wavelet basis
+						on-the-fly, by utilising prior knowledge of materials in the scene. To show the influence of different bases on
+						rendering quality, we perform a comparison of their parameterisation error and the compression performance.
+					</div>
+				</td>
+			</tr>
+
+			</table>
+			
+			
+			<br />
+			<h2>2013</h2>
+			
+			<table width="100%">
+			<!-- Michiels et al., SIGGRAPH 2013 -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Michiels_SIGGRAPH13/thumb_Michiels_SIGGRAPH13.png" width="128" alt="" onclick="toggle_v(event, '#Michiels_SIGGRAPH13', '#Michiels_SIGGRAPH13_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+				<b>High-order wavelets for hierarchical refinement in inverse rendering</b><br/>
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a>,
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=jeroen&naam=put" title="Jeroen Put" target="_blank">Jeroen Put</a>,
+				<a href="http://research.edm.uhasselt.be/~thaber/" title="Tom Haber" target="_blank">Tom Haber</a>,
+				<a href="http://surrey.academia.edu/MartinKlaudiny/" title="Martin Klaudiny" target="_blank">Martin Klaudiny</a> and
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a>, <br />
+				In Poster proceedings of <i>The 40th International Conference and Exhibition on Computer Graphics and Interactive Techniques (SIGGRAPH 2013)</i>, pp. 99-99, Anaheim, California, USA, August 2013.
+
+					<div>
+					[<a href="publications/Michiels_SIGGRAPH13/Michiels_SIGGRAPH13.pdf" target="_blank" onClick="" title="pdf">pdf</a>]
+					[<a href="publications/Michiels_SIGGRAPH13/Michiels_SIGGRAPH13.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="http://dx.doi.org/10.1145/2503385.2503494" target="_blank" onClick="" title="doi">doi</a>]
+					[<a href="publications/Michiels_SIGGRAPH13/hierarchHighOrderWav/" target="_blank" onClick="" title="website">website</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="Michiels_SIGGRAPH13_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Michiels_SIGGRAPH13', '#Michiels_SIGGRAPH13_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="Michiels_SIGGRAPH13" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						It is common to use factored representation of visibility, lighting
+						and BRDF in inverse rendering. Current techniques use Haar
+						wavelets to calculate these triple product integrals efficiently [Ng
+						et al. 2004]. Haar wavelets are an ideal basis for the piecewise constant
+						visibility function, but suboptimal for the smoother lighting
+						and material functions. How can we leverage compact high-order
+						wavelet bases to improve efficiency, memory consumption and accuracy
+						of an inverse rendering algorithm? If triple product integrals
+						can be efficiently calculated for higher-order wavelets, the reduction
+						in coefficients will reduce the number of calculations, therefore
+						improving performance and memory usage. Some BRDFs can be
+						stored five times more compactly.
+						<br/><br/>
+						Current inverse rendering algorithms rely on solving large systems
+						of bilinear equations [Haber et al. 2009]. We propose a hierarchical
+						refinement algorithm that exploits the tree structure of the wavelet
+						basis. By only splitting at interesting nodes in the hierarchy, large
+						portions of less important coefficients can be skipped. The key of
+						this algorithm is only splitting nodes of the wavelet tree that contribute
+						to the solution of the system M (see Algorithm 1). It is critical
+						to use high-order wavelets for this, as Haar wavelets can only
+						introduce high frequencies which lead to blockiness.
+
+					</div>
+				</td>
+			</tr>
+			</table>
+			
+			
+			
+			<br />
+			<h2>2011</h2>
+			
+			<table width="100%">
+			<!-- Michiels et al., Master thesis -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Michiels_MasterThesis/thumb_Michiels_MasterThesis.png" width="128" alt="" onclick="toggle_v(event, '#Michiels_MasterThesis', '#Michiels_MasterThesis_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+				<b>Scene acquisition using structured light and registration</b><br/>
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a>,
+				<a href="http://research.edm.uhasselt.be/bdedecker/" title="Bert De Decker" target="_blank">Bert De Decker</a>,
+				<a href="http://research.edm.uhasselt.be/~thaber/" title="Tom Haber" target="_blank">Tom Haber</a> and
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a>, <br />
+				<b>Master Dissertation</b>, Hasselt University, Diepenbeek, Belgium, July, 2011.
+
+					<div>
+					[<a href="publications/Michiels_MasterThesis/Michiels_MasterThesis.pdf" target="_blank" onClick="" title="pdf">pdf (dutch)</a>]
+					[<a href="publications/Michiels_MasterThesis/Michiels_MasterThesis.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="publications/Michiels_MasterThesis/Michiels_MasterThesis_presentation.pdf" target="_blank" onClick="" title="pdf">presentation (dutch)</a>]
+					</div>
+					
+					<div class="clickDropDown">[<a id="Michiels_MasterThesis_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Michiels_MasterThesis', '#Michiels_MasterThesis_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="Michiels_MasterThesis" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						Building 3D models from existing objects in the world is a fast growing domain of computer vision and computer graphics. It is used within various projects such as for example entertainment or archeology. In combination with the progress on computer technology and affordable hardware, it is possible to render this dense 3D information.
+						<br/><br/>
+						This master thesis describes an active correspondence technique, i.e. structured light, which obtains the 3D information from a scene using only a camera and projector. The thesis introduces a number of structured light patterns that can be used and that may or may not allow to solve the correspondence problem. A first category of patterns is called time-multiplexing. These are very robust and can obtain a large number of correspondences. The main drawback is that they can’t be used for moving scenes. In such situations it is better to use spatial neighborhood patterns. A spatial neighborhood pattern codes the position of a pixel in a pattern based on the neighborhood of the pixel. This makes it possible to code all the information in only one pattern. The most popular and formal technique based on a spatial neighborhood scheme are using De Bruijn sequences. In addition, there are also a number of non-formal spatial neighborhood patterns discussed. There will be shown that the choice of a good pattern in combination with a global optimization technique, i.e. Dynamic Programming, allows it to obtain a 3D point cloud out of a single captured frame.
+						<br/><br/>
+						The camera moves through the scene and for every frame the structured light technique obtains a 3D point cloud. These point clouds each have a different view of the scene. To obtain a full model of the scene, it is necessary that all these point clouds will be merged together. This step is the so called Registration of point clouds. The most popular technique is Iterative Closest Point (ICP), which searches iteratively for the best transformation to slide a point cloud in another one. These thesis will describe a great amount of alternatives of ICP, for example the use of geometric parameters (i.e. normal and curvature). The results will show that ICP is very robust for highly similar point clouds. But the algorithm faces many problems when the point cloud doesn’t overlap enough or does not contain enough depth.
+					
+						<br/><br/>
+						<h3>Results</h3>
+					
+				
+						<table class="image left" width="48%"><tr><td>
+						<a href="publications/Michiels_MasterThesis/pipelineImages.png" class="highslide left" onclick="return hs.expand(this)"  title="Click to enlarge">
+						<img class="shadow" src="publications/Michiels_MasterThesis/pipelineImages.png" alt="Highslide JS" height="250px"/></a>
+						<caption align="bottom" class="caption">
+						Overview of the system. The input of the system is a static structured light pattern and two cameras capturing the projection of the pattern onto the scene. The two camera inputs are rectified and a depthmap is obtained by applying the single shot structured light algorithm. 
+						The 3D reconstruction of each depth map frame is then registered into one 3D model.
+						</caption>
+						</td>
+						</tr></table>
+						
+						<table class="image" width="48%"><tr><td>
+						<a href="publications/Michiels_MasterThesis/DSCF4119.JPG" class="highslide left" onclick="return hs.expand(this)"  title="Click to enlarge">
+						<img class="shadow" src="publications/Michiels_MasterThesis/DSCF4119.JPG" alt="Highslide JS" height="250px"/></a>
+						<caption align="bottom" class="caption">
+						Our 3D capturing system, using 2 Point Grey Flea cameras and a 800x600 resolution projector. The system is wired to a laptop with an Intel Core 2 Duo CPU (2.10 GHz) and 4.00 GB RAM and a ATI Mobility Radeon HD 2600 GPU.<br /><br /><br /><br /><br />
+						</caption>
+						</td>
+						</tr></table>
+						
+						<table class="image left" width="48%"><tr><td>
+						<a href="publications/Michiels_MasterThesis/stripe.png" class="highslide left" onclick="return hs.expand(this)"  title="Click to enlarge">
+						<img class="shadow" src="publications/Michiels_MasterThesis/stripe.png" alt="Highslide JS" height="100px"/></a>
+						<caption align="bottom" class="caption">
+						De Bruijn stripe patterns with different orders and window sizes. Each window of consecutive colors in the pattern is unique for the entire image.
+						</caption>
+						</td>
+						</tr></table>
+						
+						<table class="image" width="48%"><tr><td>
+						<a href="publications/Michiels_MasterThesis/naiveCorre.png" class="highslide left" onclick="return hs.expand(this)"  title="Click to enlarge">
+						<img class="shadow" src="publications/Michiels_MasterThesis/naiveCorre.png" alt="Highslide JS" height="100px"/></a>
+						<caption align="bottom" class="caption">
+						By searching the unique window of consecutive colors in both the left and right camera image, a disparity of each pixel of the window can be identified.
+						</caption>
+						</td>
+						</tr></table>
+						</div>
+			
+
+				</td>
+			</tr>
+			</table>
+			
+			
+			<br />
+			<h2>2009</h2>
+			
+			<table width="100%">
+			<!-- Michiels et al., Bachelor thesis -->
+			<tr>
+				<td class="publiImg"><img class="publiImg shadow" src="publications/Michiels_BachelorThesis/thumb_Michiels_BachelorThesis.png" width="128" alt="" onclick="toggle_v(event, '#Michiels_BachelorThesis', '#Michiels_BachelorThesis_Button');"></td>
+				<td > 
+				<div class="publiInfo">
+				<b>Augmented Reality for Workbenches</b><br/>
+				<a href="http://www.nickmichiels.com" title="Nick Michiels"><i>Nick Michiels</i></a>,
+				<a href="http://research.edm.uhasselt.be/~tcuypers/" title="Tom Cuypers" target="_blank">Tom Cuypers</a>,
+				<a href="hhttps://be.linkedin.com/pub/yannick-francken/2/41b/918" title="Yannick Francken" target="_blank">Yannick Francken</a> and
+				<a href="http://www.uhasselt.be/fiche_edm?voornaam=philippe&naam=bekaert" title="Philippe Bekaert" target="_blank">Philippe Bekaert</a>, <br />
+				<b>Bachelor Dissertation</b>, Hasselt University, Diepenbeek, Belgium, July, 2009.
+
+					<div>
+					[<a href="publications/Michiels_BachelorThesis/Michiels_BachelorThesis.pdf" target="_blank" onClick="" title="pdf">pdf (dutch)</a>]
+					[<a href="publications/Michiels_BachelorThesis/Michiels_BachelorThesis.bib" target="_blank" onClick="" title="bib">bib</a>]
+					[<a href="publications/Michiels_BachelorThesis/Michiels_BachelorThesis_presentation.pdf" target="_blank" onClick="" title="pdf">presentation (dutch)</a>]
+
+					</div>
+					
+					<div class="clickDropDown">[<a id="Michiels_BachelorThesis_Button" href="" title="Click This Button" onclick="toggle_v(event, '#Michiels_BachelorThesis', '#Michiels_BachelorThesis_Button');">click here for more info/results</a>]</div>
+					</div>
+
+					<div id="Michiels_BachelorThesis" class="dropdown publiProj" >
+						<h3>Abstract</h3>
+						In this bachelor thesis I’ll try to recognize objects of a workbench by videotaping the workbench. This objects will be replaced by new projected objects. To accomplish this we need a workbench on which we project. Besides the projector we also videotape the workbench. In my setup I will place the projector en videotape perpendicular to the workbench. In the beginning I only use blank pages as objects. There are no distinctions between the pages.To accomplish this bachelor thesis there are some steps we must follow:- First we have the calibration. We need a calibration step to know  the exact relationship between the coordinates of the screen and the coordinates of the workbench. This step will be fully automatic.- The second step is the image recognition. We have some incoming frames from the camera. Our job is to distinguish the blank pages from the workbench.- If the separation of the blank pages is done we can map the projection to the coordinates of the blank pages (expressed  in coordinates of the workbench). At this point we are ready to project onto the workbench. This step also includes a mechanism to detect a rotation or translation of the blank page as fast as possible. The projection should be updated as fast as possible.
+						<br/><br/>
+						My second goal is to create something like the Toolkit library. The main purpose is to give every blank page a marker. This marker will be recognized in the step of image recognition. Corresponding to the marker, the projector can treat each page different. For example on one page we project a movie while on the other we project a pdf. I’ll also do some research for choosing the marker as best as possible.
+						<br/><br/>
+						As an extra I could recognize several kinds of objects and not just blank pages anymore. As second extension I could make a second setup and make a network between the two setups.
+						<br /><br />
+						<iframe width="580" height="435" src="https://www.youtube.com/embed/XnU9rurRv-w" frameborder="0" allowfullscreen></iframe>	
+					</div>
+				</td>
+			</tr>
+			</table>
+		</div>
+	</div>
+ 
+	<div id="footer" class="row">
+		<div class="col c12 aligncenter">
+			<h3>&copy; 2018 Nick Michiels</h3>
+			<p><a href="http://andreasviklund.com/templates/origo/" target="_blank">Template design</a> by <a href="http://andreasviklund.com/" target="_blank">Andreas Viklund</a></p>
+		</div>
+	</div>
+ </div>
+</body>
+</html>

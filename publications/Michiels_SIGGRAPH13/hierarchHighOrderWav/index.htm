@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://graphics.stanford.edu/papers/allfreqmat/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Wavelet Triple Product Integrals for All-Frequency Relighting</title>
+
+<script type="text/javascript" src="highslide/highslide.js"></script>
+<script type="text/javascript" src="highslide/highslide.config.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="highslide/highslide-ie6.css" />
+<![endif]-->
+
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+<meta content="Microsoft FrontPage 4.0" name="GENERATOR"></head>
+<body>
+<div id="container">
+      <h2>High-order Wavelets for Hierarchical Refinement in Inverse Rendering</h2>
+      
+      <p class="authors"> &nbsp;</p>
+    <a class="authors" href="mailto:nick.michiels@uhasselt.be?subject=HighOrderWaveletTripleProduct (website)">Nick Michiels</a> <sup>1</sup>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="authors" href="mailto:jeroen.put@uhasselt.be?subject=HighOrderWaveletTripleProduct (website)">Jeroen Put</a> <sup>1</sup>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="authors" href="mailto:tom.haber@uhasselt.be?subject=HighOrderWaveletTripleProduct (website)">Tom Haber</a> <sup>1</sup>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="authors" href="mailto:M.Klaudiny@surrey.ac.uk?subject=HighOrderWaveletTripleProduct (website)">Martin Klaudiny</a> <sup>2</sup>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="authors" href="mailto:philippe.bekaert@uhasselt.be?subject=HighOrderWaveletTripleProduct (website)">Philippe Bekaert</a> <sup>1</sup>
+	<p align="center">&nbsp;</p>
+	<table>
+	<tr>
+	<td class="affiliation"> 	
+      <i><sup>1</sup> Hasselt University - tUL - iMinds<br />
+		Expertise Centre for Digital Media <br />
+		Wetenschapspark 2, 3590 Diepenbeek, Belgium&nbsp; <br />
+		<a href="http://edm.uhasselt.be">http://edm.uhasselt.be</a></i>
+	</td>
+	<td class="affiliation">
+	<i><sup>2</sup> Centre for Vision, Speech and Signal Processing,  <br />
+		University of Surrey, UK<br />
+		<a href="http://www.surrey.ac.uk/cvssp/">http://www.surrey.ac.uk/cvssp/</a></i>
+		
+		
+	</td>
+	</tr>
+	</table>
+      
+
+      
+ <p align="center">&nbsp;
+      
+ </p>
+    <p align="center">
+    <img border="0" src="./images/surreyFace.png" width="800">
+      
+    </p>
+      
+
+<p style="word-spacing: 0; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+      
+ <p>&nbsp;</p>
+ <h3><b>Abstract</b></h3>
+ <p>&nbsp;</p>
+<p class="text">It is common to use factored representation of visibility, lighting and BRDF in inverse rendering. Current techniques use Haar wavelets to calculate these triple product integrals efficiently [Ng et al. 2004]. Haar wavelets are an ideal basis for the piecewise constant visibility function, but suboptimal for the smoother lighting
+and material functions. How can we leverage compact high-order wavelet bases to improve efficiency, memory consumption and accuracy of an inverse rendering algorithm? If triple product integrals can be efficiently calculated for higher-order wavelets, the reduction in coefficients will reduce the number of calculations, therefore improving performance and memory usage. Some BRDFs can be stored 5x more compactly.
+ <br />
+Current inverse rendering algorithms rely on solving large systems of bilinear equations [Haber et al. 2009]. We propose a hierarchical refinement algorithm that exploits the tree structure of the wavelet basis. By only splitting at interesting nodes in the hierarchy, large portions of less important coefficients can be skipped. The key of this algorithm is only splitting nodes of the wavelet tree that contribute to the solution of the system M (see Algorithm 1). It is critical to use high-order wavelets for this, as Haar wavelet can only introduce high frequencies which leads to blockiness. </p>
+   
+<p>&nbsp;
+ </p>
+ 
+ <h3><b>Images</b></h3>
+ <p>&nbsp;</p>
+<table>
+	<tr>
+	<td class="images"> 	
+	
+ <a href="./images/hierarchical.png" class="highslide" onclick="return hs.expand(this)">
+	<img src="images/hierarchical.png" alt="Highslide JS"
+		title="Click to enlarge" style="width: 300px;"/></a>
+
+<div class="highslide-caption">
+	Iterative refinement of illumination by adding detail coefficients based on a splitting criterium. Reconstructions for both Haar (red) and the smoother Coiflet (green) wavelet bases are shown. Haar has a tendency to introduce disturbing high frequencies around edges.
+</div>
+ 
+ 	</td>
+	<td class="images"> 	
+
+ <a href="./images/surreyFace.png" class="highslide" onclick="return hs.expand(this)">
+	<img src="images/surreyFace.png" alt="Highslide JS"
+		title="Click to enlarge" style="width: 300px;"/></a>
+
+<div class="highslide-caption">
+	Reconstruction of a temporal face dataset under different lighting conditions and estimated with the hierarchical refinement method. Ray traced occlusion maps, BRDF slices
+and lighting environment map are combined in the triple product integral calculation.
+</div>
+ 
+ 	</td>
+	</tr>
+	<tr>
+	<td class="imagesCaption"> 	
+	<p class="imagesCaption">
+ Iterative refinement of illumination by adding detail coefficients based on a splitting criterium. Reconstructions for both Haar (red) and the smoother Coiflet (green) wavelet bases are shown. Haar has a tendency to introduce disturbing high frequencies around edges.
+ </p>
+ 	</td>
+	<td class="imagesCaption"> 	
+	<p class="imagesCaption">
+Reconstruction of a temporal face dataset under different lighting conditions and estimated with the hierarchical refinement method. Ray traced occlusion maps, BRDF slices
+and lighting environment map are combined in the triple product integral calculation.
+ </p>
+ 	</td>
+	</tr>
+		<tr>
+	<td class="imagesSpan" colspan="2"> 	
+	 <p>&nbsp;</p>
+ <a href="./images/tensor.png" class="highslide" onclick="return hs.expand(this)">
+	<img src="images/tensor.png" alt="Highslide JS"
+		title="Click to enlarge" style="width: 600px;"/></a>
+
+<div class="highslide-caption">
+	Preprocessed binding coefficients. The Haar binding coefficients can be identified by 3 simple cases [Ng et al. 2004] (left). On the other hand, higher-order wavelets have overlapping support, resulting in a more complex tensor of binding coefficients. By exploiting the hierarchical nature and vanishing moments of wavelets we can calculate efficiently the sparse tensor for high-order wavelets (right).
+</div>
+ 
+ 	</td>
+		</tr>
+		<tr>
+		<td class="imagesCaptionSpan" colspan="2"> 	
+	<p class="imagesCaptionSpan">
+Preprocessed binding coefficients. The Haar binding coefficients can be identified by 3 simple cases [Ng et al. 2004] (left). On the other hand, higher-order wavelets have overlapping support, resulting in a more complex tensor of binding coefficients. By exploiting the hierarchical nature and vanishing moments of wavelets we can calculate efficiently the sparse tensor for high-order wavelets (right).
+ </p>
+ 	</td>
+		</tr>
+		
+	
+	</table>
+		
+      <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+<h3><b>Paper and Video</b></h3>
+
+<p>The videos can be watched in <a href="http://www.videolan.org/vlc/" >VLC media player</a>
+<br/><br/><br/>
+<table>
+<tr>
+<td class="videoImages"><img src="./videos/surreyFaceUffiziFrame18_slow.png" style="width: 290px;height: 205px;"/></td>
+<td class="videoImages"><img src="./videos/surreyVideoUffiziHighRes.png" style="width: 290px;height: 205px;"/></td>
+</tr><tr>
+<td class="videoImagesCaption"> 	
+	<p class="videoImagesCaption">
+	<a href="./videos/surreyFaceUffiziFrame18_slow.avi">surreyFaceUffiziFrame18_slow.avi</a> (1,0 MB)<br />  Relighting of one frame with uffizi environment map.
+	</p>
+</td>
+<td class="videoImagesCaption"> 	
+	<p class="videoImagesCaption">
+	<a href="./videos/surreyVideoUffiziHighRes.avi">surreyVideoUffiziHighRes.avi</a> (2.6 MB)<br />  Relighting the temporal sequence with uffizi environment map.
+	</p>
+</td>
+</tr><tr>
+<td class="videoImages"><br /><img src="./videos/surreyFacePool6Frame190.png" style="width: 290px;height: 205px;"/></td>
+<td class="videoImages"><br /><img src="./videos/surreyFaceVideoPool6.png" style="width: 290px;height: 205px;"/></td>
+</tr><tr>
+<td class="videoImagesCaption"> 	
+	<p class="videoImagesCaption">
+	<a href="./videos/surreyFacePool6Frame190.avi">surreyFacePool6Frame190.avi</a> (1,1 MB)<br />  Relighting of one frame with a pool environment map.
+	</p>
+</td>
+<td class="videoImagesCaption"> 	
+	<p class="videoImagesCaption">
+	<a href="./videos/surreyFaceVideoPool6.avi">surreyFaceVideoPool6.avi</a> (0,9 MB)<br />  Relighting the temporal sequence with a pool environment map.
+	</p>
+</td>
+</tr>
+</table>
+
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+<h3><b>References</b></h3>
+ <p>&nbsp;</p>
+<p class="text">
+HABER, T., FUCHS, C., BEKAERT, P., SEIDEL, H.-P., GOESELE, M., AND LENSCH, H. P. A. 2009. Relighting objects from image collections. 
+<br /><br />
+NG, R., RAMAMOORTHI, R., AND HANRAHAN, P. 2004. Triple product wavelet integrals for all-frequency relighting. ACM Trans. Graph. 23, 3 (Aug.), 477–487.
+<br /><br />
+PEERS, P., AND DUTR´E , P. 2005. Inferring reflectance functions from wavelet noise. In Proceedings of the Sixteenth Eurographics conference on Rendering Techniques, Eurographics Association, Aire-la-Ville, Switzerland, Switzerland, EGSR’05, 173– 182. </p>
+
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+<p><a href="http://www.uhasselt.be/disclaimer">© Nick Michiels 2013</a></p>
+<p>&nbsp;</p>
+</div>
+</body></html>
